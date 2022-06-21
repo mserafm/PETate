@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/ocho"
+    tools:context=".DialogMascota">
+
+    <RelativeLayout
+        android:id="@+id/relative_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/ocho">
+
+        <ImageView
+            android:id="@+id/iv_mascota_dialog"
+            android:layout_width="110dp"
+            android:layout_height="@dimen/cientocinco"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:adjustViewBounds="true"
+            android:maxHeight="@dimen/cien"
+            android:scaleType="centerCrop"
+            android:src="@drawable/paw_placeholder" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/iv_mascota_dialog"
+            android:layout_toRightOf="@id/iv_mascota_dialog"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/veinte">
+
+
+            <RelativeLayout
+                android:id="@+id/rel_lay_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/uno"
+                    android:layout_centerVertical="true"
+                    android:background="@color/linea_nome" />
+
+                <TextView
+                    android:id="@+id/tv_nome_mascota_dialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@color/white"
+                    android:backgroundTint="@color/white"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="aaaaa"
+                    android:padding="@dimen/diez"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_edad_mascota_dialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingRight="@dimen/diez"
+                    android:text="12"
+                    android:textColor="@color/black"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                <TextView
+                    android:id="@+id/tv_anos_dialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/anos"
+                    android:textColor="@color/black"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_especie_mascota_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="especia"
+                android:textColor="@color/black"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <TextView
+                android:id="@+id/tv_castrado_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/castrado"
+                android:textColor="@color/black"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_1"
+        android:layout_above="@+id/btn_editar_mascota">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/ocho">
+
+            <TextView
+                android:id="@+id/titulo_afeccions_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/afeccions"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <View
+                android:id="@+id/linea_afeccions_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/uno"
+                android:layout_below="@+id/titulo_afeccions_dialog"
+                android:layout_marginBottom="@dimen/veinte"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/tv_afeccions_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linea_afeccions_dialog"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <TextView
+                android:id="@+id/titulo_veterinario_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_afeccions_dialog"
+                android:layout_marginTop="@dimen/cincuenta"
+                android:text="@string/vet_contact"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <View
+                android:id="@+id/linea_veterinario_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/uno"
+                android:layout_below="@+id/titulo_veterinario_dialog"
+                android:layout_marginBottom="@dimen/veinte"
+                android:background="@android:color/darker_gray" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linea_veterinario_dialog">
+
+                <TextView
+                    android:id="@+id/tv_veterinario_nome_dialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/ib_chamar_veterinario"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_alignParentStart="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:layout_toLeftOf="@+id/ib_chamar_veterinario"
+                    android:layout_alignParentLeft="true" />
+
+                <TextView
+                    android:id="@+id/tv_veterinario_tlf_dialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_veterinario_nome_dialog"
+                    android:layout_toStartOf="@+id/ib_chamar_veterinario"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_alignParentStart="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:layout_toLeftOf="@+id/ib_chamar_veterinario"
+                    android:layout_alignParentLeft="true" />
+
+                <ImageButton
+                    android:id="@+id/ib_chamar_veterinario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/ic_call" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_editar_mascota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/white"
+        android:text="@string/edit"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/darker_gray"/>
+
+</RelativeLayout>

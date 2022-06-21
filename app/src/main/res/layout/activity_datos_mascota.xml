@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DatosMascota">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linear_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_mascota_datos_activity"
+                    android:layout_width="@dimen/doscientosdiez"
+                    android:layout_height="@dimen/doscientos"
+                    android:layout_margin="@dimen/veinte"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    android:maxHeight="@dimen/doscientos"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/paw_placeholder" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_titulo_nome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear_image"
+                android:gravity="center_horizontal"
+                android:text="@string/nome"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <EditText
+                android:id="@+id/et_nome_mascota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_titulo_nome"
+                android:layout_margin="@dimen/diez"
+                android:inputType="text|textCapWords" />
+
+            <TextView
+                android:id="@+id/tv_edad_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_nome_mascota"
+                android:layout_marginTop="@dimen/diez"
+                android:gravity="center_horizontal"
+                android:text="@string/idade"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_spinners"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_edad_titulo"
+                android:orientation="horizontal"
+                android:padding="@dimen/diez">
+                <Spinner
+                    android:id="@+id/sp_year"
+                    android:layout_width="@dimen/cero"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="32"/>
+                <Spinner
+                    android:id="@+id/sp_month"
+                    android:layout_width="@dimen/cero"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="38"
+                    android:entries="@array/meses"/>
+                <Spinner
+                    android:id="@+id/sp_day"
+                    android:layout_width="@dimen/cero"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_especie_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_spinners"
+                android:layout_marginTop="@dimen/diez"
+                android:gravity="center_horizontal"
+                android:text="@string/especie"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <AutoCompleteTextView
+                android:id="@+id/et_especie_datos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_especie_titulo"
+                android:layout_margin="@dimen/diez"
+                android:inputType="text|textCapSentences" />
+
+            <CheckBox
+                android:id="@+id/cb_castrado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_especie_datos"
+                android:layout_centerHorizontal="true"
+                android:layout_marginVertical="@dimen/diez"
+                android:text="@string/castrado"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+
+            <LinearLayout
+                android:id="@+id/linear_botones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cb_castrado"
+                android:layout_marginTop="@dimen/veinte"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/cinco">
+
+                    <Button
+                        android:id="@+id/btn_engadir_afeccion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autoSizeTextType="uniform"
+                        android:backgroundTint="@color/red"
+                        android:text="@string/add_af" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/cinco">
+
+                    <Button
+                        android:id="@+id/btn_engadir_veterinario"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autoSizeTextType="uniform"
+                        android:backgroundTint="@color/red"
+                        android:text="@string/add_vet" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

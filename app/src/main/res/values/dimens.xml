@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="doscientos">200dp</dimen>
+    <dimen name="doscientosdiez">210dp</dimen>
+    <dimen name="cien">100dp</dimen>
+    <dimen name="cientocinco">105dp</dimen>
+    <dimen name="cuarenta">40dp</dimen>
+    <dimen name="diez">10dp</dimen>
+    <dimen name="uno">1dp</dimen>
+    <dimen name="veinte">20dp</dimen>
+    <dimen name="cincuenta">50dp</dimen>
+    <dimen name="ocho">8dp</dimen>
+    <dimen name="cinco">5dp</dimen>
+    <dimen name="seis">6dp</dimen>
+    <dimen name="cero">0dp</dimen>
+    <dimen name="cientonoventa">190dp</dimen>
+    <dimen name="dos">2dp</dimen>
+</resources>

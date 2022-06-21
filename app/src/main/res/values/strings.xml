@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Project_A17MariaSM</string>
+    <string name="d_deleted">Data deleted</string>
+    <string name="edit">Edit </string>
+    <string name="add_m">Add Pet</string>
+    <string name="missing_data">You must complete the form</string>
+    <string name="nome">Name</string>
+    <string name="idade">Age</string>
+    <string name="especie">Species</string>
+    <string name="castrado">Neutered</string>
+    <string name="add_af">Add\nConditions</string>
+    <string name="add_vet">Add\nVet</string>
+    <string name="anos">Years</string>
+    <string name="tipo_af">Condition Type</string>
+    <string name="add">Add</string>
+    <string name="ok">Accept</string>
+    <string name="cancelar">Cancel</string>
+    <string name="nome_vet">Vet Name</string>
+    <string name="tlf">Vet Phone Number</string>
+    <string name="afeccions">Conditions</string>
+    <string name="vet_contact">Contact vet</string>
+    <string name="edit_vet">Edit\nVet</string>
+    <string name="ano">Year</string>
+    <string name="inserte_afeccion">Insert condition</string>
+    <string name="edit_af">Edit\nConditions</string>
+    <string name="borrar_datos">Delete data</string>
+    <string name="preference_preferences_key" translatable="false">com.example.project_a17mariasm.PREFERENCIAS</string>
+    <string name="pregunta_borrar">Do you want to delete the data associated to</string>
+    <string name="afeccion_existente">Already existent condition</string>
+    <string-array name="meses">
+        <item>Month</item>
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    <string name="dia">Day</string>
+    <string name="mascota">pet</string>
+    <string name="mascotas">pets</string>
+    <string name="non_borrar">Data can\'t be deleted because it is associated to</string>
+    <string name="titulo_afeccions">Manage conditions</string>
+</resources>

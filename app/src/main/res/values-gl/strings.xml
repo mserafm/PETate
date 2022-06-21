@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Project_A17MariaSM</string>
+    <string name="d_deleted">Entrada eliminada</string>
+    <string name="edit">Editar </string>
+    <string name="add_m">Engadir Mascota</string>
+    <string name="missing_data">Precisa completar o formulario</string>
+    <string name="nome">Nome</string>
+    <string name="idade">Idade</string>
+    <string name="especie">Especie</string>
+    <string name="castrado">Castrado</string>
+    <string name="add_af">Engadir\nAfeccións</string>
+    <string name="add_vet">Engadir\nVeterinario</string>
+    <string name="anos">Anos</string>
+    <string name="tipo_af">Tipo de Afeccion</string>
+    <string name="add">Engadir</string>
+    <string name="ok">Aceptar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="nome_vet">Nome do Veterinario</string>
+    <string name="tlf">Teléfono do Veterinario</string>
+    <string name="afeccions">Afeccións</string>
+    <string name="vet_contact">Veterinario de contacto</string>
+    <string name="edit_vet">Editar\nVeterinario</string>
+    <string name="edit_af">Editar\nAfeccións</string>
+    <string name="ano">Ano</string>
+    <string name="inserte_afeccion">Inserte unha afección</string>
+    <string name="borrar_datos">Borrar datos</string>
+    <string name="pregunta_borrar">Desexa borrar os datos asociados a</string>
+    <string name="afeccion_existente">Esta afección xa existe</string>
+    <string-array name="meses">
+        <item>Mes</item>
+        <item>Xaneiro</item>
+        <item>Febreiro</item>
+        <item>Marzo</item>
+        <item>Abril</item>
+        <item>Maio</item>
+        <item>Xuño</item>
+        <item>Xullo</item>
+        <item>Agosto</item>
+        <item>Setembro</item>
+        <item>Outubro</item>
+        <item>Novembro</item>
+        <item>Decembro</item>
+    </string-array>
+    <string name="dia">Día</string>
+    <string name="mascota">mascota</string>
+    <string name="mascotas">mascotas</string>
+    <string name="non_borrar">Non se poden borrar os datos porque están asociados a</string>
+    <string name="titulo_afeccions">Xestionar afeccións</string>
+</resources>

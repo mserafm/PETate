@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/layout/activity_datos_mascota.xml" value="0.1344984802431611" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.20833333333333334" />
+        <entry key="app/src/main/res/layout/afeccion_item.xml" value="0.1344984802431611" />
+        <entry key="app/src/main/res/layout/fragment_add_afeccions.xml" value="0.1344984802431611" />
+        <entry key="app/src/main/res/layout/fragment_add_veterinario.xml" value="0.1344984802431611" />
+        <entry key="app/src/main/res/layout/fragment_dialog_mascota.xml" value="0.1344984802431611" />
+        <entry key="app/src/main/res/menu/main_menu.xml" value="0.36041666666666666" />
+        <entry key="app/src/main/res/xml/preferences.xml" value="0.1344984802431611" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
